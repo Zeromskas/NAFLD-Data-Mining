@@ -16,7 +16,7 @@ The data are the `nafld1`, `nafld2` and `nafld3` tables distributed with the R p
 - summarises baseline characteristics, follow-up and censoring;
 - estimates five-year mortality by age, sex, BMI and number of metabolic conditions.
 
-To run it, install the `survival` package (version 3.8-12 was used) and run `eda.R` in R or RStudio:
+To run it, install the `survival` package version 3.8-12 and run `eda.R` in R or RStudio:
 
 ```r
 install.packages("survival")
