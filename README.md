@@ -6,4 +6,21 @@ The project asks whether more complex survival models like Cox model with spline
 
 ## Data
 
-The data are the `nafld1`, `nafld2` and `nafld3` tables distributed with the R package [`survival`](https://CRAN.R-project.org/package=survival): a 90% random sample of the Olmsted County NAFLD cohort (Allen et al., *Hepatology* 2018). The scripts load the data with `data(nafld, package = "survival")`. The same three tables can also be viewed and are described on Kaggle: https://www.kaggle.com/datasets/utkarshx27/non-alcohol-fatty-liver-disease/data.
+The data are the `nafld1`, `nafld2` and `nafld3` tables distributed with the R package [`survival`](https://CRAN.R-project.org/package=survival): a 90% random sample of the Olmsted County NAFLD cohort (Allen et al., *Hepatology* 2018). The scripts load the data with `data(nafld, package = "survival")`.
+
+## Code
+
+`eda.R` contains the data analysis for the draft:
+
+- builds the analysis sample of 3,015 NAFLD cases with recorded BMI;
+- summarises baseline characteristics, follow-up and censoring;
+- estimates five-year mortality by age, sex, BMI and number of metabolic conditions.
+
+To run it, install the `survival` package (version 3.8-12 was used) and run `eda.R` in R or RStudio:
+
+```r
+install.packages("survival")
+source("eda.R")
+```
+
+The code for the survival models will be added for the final paper.
